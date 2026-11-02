@@ -1,39 +1,54 @@
 # Mamadou Foune Barry
 
-**Mathematics with Statistics · Lancaster University**
+**BSc Mathematics with Statistics · Lancaster University**<br>
+Predicted First-Class Honours · Expected graduation July 2027
 
-Interested in inverse problems, Bayesian inference and autonomous systems.
-I develop mathematical investigations and reproducible scientific-computing
-exercises, with methods, evidence and limitations documented alongside the work.
+I'm interested in how autonomous systems reason and act under uncertainty, particularly **Bayesian inference, belief-space planning, active sensing and dual control**. My projects also explore inverse problems and the reliability of scientific machine learning.
 
-## Research writing
+## Research projects
+
+### Belief-Space Planning for Autonomous Source Localisation
+
+Developing a simulation framework in which a robot searches for a hidden radio source using noisy received signal-strength (RSSI) measurements.
+
+- Bayesian belief updates over candidate source locations.
+- Greedy MAP-based pursuit and information-seeking control.
+- Evaluating search behaviour using trajectories, posterior uncertainty and success under explicit simulation assumptions.
+- **Current direction:** evaluate experimental belief-space and dual-control variants alongside these baselines. General performance advantages are not established.
+
+**Status:** Active simulation research. Public code release under review.
+
+### Inpainting PHANGS–ALMA Spectral Cubes
+
+Studied self-supervised reconstruction of masked three-dimensional CO(2–1) spectral cubes using a shared masked-autoencoder framework with linear, Conv3D and neural cellular automata reconstruction heads.
+
+The evaluation considers random, frequency-varying and structured masking, with attention to **scientific fidelity** (including flux recovery) as well as conventional reconstruction metrics. A central question is whether better image-level scores preserve the scientific quantities researchers care about.
+
+**Status:** Research manuscript and code under review for public release.
 
 ### Scientific Functional Ambiguity in Inverse Problems
 
-How much can a scientific quantity vary between states that produce the same
-observations? This preliminary investigation examines centroid and
-linear-fractional functionals, nullspace geometry, positivity and the gap
-between local sensitivity and finite ambiguity.
+A preliminary mathematical investigation of what can be inferred about a scientific quantity when multiple states agree with the same observations.
 
-*Preliminary mathematical investigation · September 2026*
+For a forward operator $A$, two states can satisfy $Ax_1 = Ax_2$ while yielding different values of a scientific functional $F$. My preliminary report examines exact finite perturbations, nullspace orientation, positivity constraints and linear-fractional functionals.
 
-## Selected programming
+**Status:** Preliminary technical report (2026); public PDF release pending. This is not presented as peer-reviewed work.
 
-| Project | Focus | Evidence |
-|---|---|---|
-| **[CIFAR-10 CNN](https://github.com/mamadoufoune6-spec/cifar10-cnn-pytorch)** | Convolutional image classification in PyTorch | Seeded training, validation-based checkpoints and a recorded 20-epoch baseline |
-| **[KMNIST MLP](https://github.com/mamadoufoune6-spec/kmnist-mlp-pytorch)** | Multilayer classification in PyTorch | Seeded data splits, a recorded 20-epoch baseline and held-out evaluation |
+## Selected PyTorch projects
 
-These are learning exercises. Each repository includes reproduction commands,
-measured results, limitations and provenance describing AI-assisted changes.
+| Project | Focus |
+| --- | --- |
+| [CIFAR-10 CNN](https://github.com/mamadoufoune6-spec/cifar10-cnn-pytorch) | Image classification, training and validation, checkpoint selection and held-out testing |
+| [KMNIST MLP](https://github.com/mamadoufoune6-spec/kmnist-mlp-pytorch) | Training and evaluation workflow, reproducible data splits and learning-curve analysis |
 
-### A measured example
+These were **learning implementations**, not claimed research contributions or optimised benchmarks. Each repository contains its own setup instructions, experiment results, limitations and notes on AI-assisted engineering changes.
 
-<img src="https://raw.githubusercontent.com/mamadoufoune6-spec/kmnist-mlp-pytorch/8d240c5e3952e3fd347a8f28b472b481e33d7da7/results/curves.png" alt="KMNIST training and validation loss and accuracy across 20 epochs" width="680">
+## Tools and interests
 
-*KMNIST training and validation, seed 42. Held-out test results and run conditions
-are recorded separately in the [project README](https://github.com/mamadoufoune6-spec/kmnist-mlp-pytorch#results-and-limitations).*
+**Programming and scientific computing:** Python, NumPy, SciPy, pandas, PyTorch, numerical modelling and data visualisation.<br>
+**Methods used in projects:** Bayesian inference, numerical methods, constrained optimisation, inverse problems, self-supervised learning and 3D reconstruction.<br>
+**Current research interests:** Autonomous search, stochastic control, belief-space planning, active perception and model-based reinforcement learning.
 
 ---
 
-Python · PyTorch · NumPy · Mathematical modelling
+**Contact:** [Lancaster University email](mailto:F.barry@lancaster.ac.uk)
