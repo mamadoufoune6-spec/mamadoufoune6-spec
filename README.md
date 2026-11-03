@@ -3,52 +3,38 @@
 **BSc Mathematics with Statistics · Lancaster University**<br>
 Predicted First-Class Honours · Expected graduation July 2027
 
-I'm interested in how autonomous systems reason and act under uncertainty, particularly **Bayesian inference, belief-space planning, active sensing and dual control**. My projects also explore inverse problems and the reliability of scientific machine learning.
+Interested in Bayesian inference, inverse problems and how autonomous systems
+choose actions under uncertainty, particularly belief-space planning, active
+sensing and dual control.
 
 ## Research projects
 
-### Belief-Space Planning for Autonomous Source Localisation
+### [Belief-Space Planning for Autonomous Source Localisation](https://github.com/mamadoufoune6-spec/belief-space-source-localisation)
 
-Developing a simulation framework in which a robot searches for a hidden radio source using noisy received signal-strength (RSSI) measurements.
+Simulating radio-source search with noisy RSSI measurements, Bayesian belief
+updates, greedy pursuit and information-seeking control. Dual-control variants
+remain experimental; general performance advantages are not established.
 
-- Bayesian belief updates over candidate source locations.
-- Greedy MAP-based pursuit and information-seeking control.
-- Evaluating search behaviour using trajectories, posterior uncertainty and success under explicit simulation assumptions.
-- **Current direction:** evaluate experimental belief-space and dual-control variants alongside these baselines. General performance advantages are not established.
+### [Inpainting PHANGS–ALMA Spectral Cubes](https://github.com/mamadoufoune6-spec/radio-astronomy-reconstruction-report)
 
-**Status:** Active simulation research. Public code release under review.
+Studying masked-autoencoder reconstruction with linear, Conv3D and neural
+cellular automata heads, evaluating reconstruction quality and scientific
+quantities such as flux recovery. [Technical manuscript (PDF)](https://github.com/mamadoufoune6-spec/radio-astronomy-reconstruction-report/blob/main/radio_astronomy_reconstruction_technical_report.pdf), October 2026; implementation remains private.
 
-### Inpainting PHANGS–ALMA Spectral Cubes
+### [Scientific Functional Ambiguity in Inverse Problems](https://github.com/mamadoufoune6-spec/inverse-problems-functional-ambiguity)
 
-Studied self-supervised reconstruction of masked three-dimensional CO(2–1) spectral cubes using a shared masked-autoencoder framework with linear, Conv3D and neural cellular automata reconstruction heads.
-
-The evaluation considers random, frequency-varying and structured masking, with attention to **scientific fidelity** (including flux recovery) as well as conventional reconstruction metrics. A central question is whether better image-level scores preserve the scientific quantities researchers care about.
-
-**Status:** Research manuscript and code under review for public release.
-
-### Scientific Functional Ambiguity in Inverse Problems
-
-A preliminary mathematical investigation of what can be inferred about a scientific quantity when multiple states agree with the same observations.
-
-For a forward operator $A$, two states can satisfy $Ax_1 = Ax_2$ while yielding different values of a scientific functional $F$. My preliminary report examines exact finite perturbations, nullspace orientation, positivity constraints and linear-fractional functionals.
-
-**Status:** Preliminary technical report (2026); public PDF release pending. This is not presented as peer-reviewed work.
+A preliminary investigation of scientific quantities that can differ between
+states with identical observations. The report examines finite perturbations,
+nullspace geometry and linear-fractional functionals. [Preliminary technical report (PDF)](https://github.com/mamadoufoune6-spec/inverse-problems-functional-ambiguity/blob/main/scientific_functional_ambiguity_technical_report.pdf), September 2026.
 
 ## Selected PyTorch projects
 
-| Project | Focus |
-| --- | --- |
-| [CIFAR-10 CNN](https://github.com/mamadoufoune6-spec/cifar10-cnn-pytorch) | Image classification, training and validation, checkpoint selection and held-out testing |
-| [KMNIST MLP](https://github.com/mamadoufoune6-spec/kmnist-mlp-pytorch) | Training and evaluation workflow, reproducible data splits and learning-curve analysis |
+- **[CIFAR-10 CNN](https://github.com/mamadoufoune6-spec/cifar10-cnn-pytorch)** — reproducible training, validation-based checkpoint selection and held-out evaluation.
+- **[KMNIST MLP](https://github.com/mamadoufoune6-spec/kmnist-mlp-pytorch)** — multilayer classification, seeded splits and evaluation diagnostics.
 
-These were **learning implementations**, not claimed research contributions or optimised benchmarks. Each repository contains its own setup instructions, experiment results, limitations and notes on AI-assisted engineering changes.
+Learning implementations with measured results, limitations and documented
+AI-assisted engineering; no tuned-benchmark or research-novelty claim.
 
-## Tools and interests
-
-**Programming and scientific computing:** Python, NumPy, SciPy, pandas, PyTorch, numerical modelling and data visualisation.<br>
-**Methods used in projects:** Bayesian inference, numerical methods, constrained optimisation, inverse problems, self-supervised learning and 3D reconstruction.<br>
-**Current research interests:** Autonomous search, stochastic control, belief-space planning, active perception and model-based reinforcement learning.
-
----
+Python · NumPy · SciPy · pandas · PyTorch · Scientific computing
 
 **Contact:** [Lancaster University email](mailto:F.barry@lancaster.ac.uk)
